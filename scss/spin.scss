@@ -5,17 +5,17 @@
 }
 
 body {
-  background-color: rgb(10,10,10);
+  background-color: rgb(10, 10, 10);
 }
 
 .top {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: rgba(255, 0, 0, 0.3);
+  background-color: rgba(255, 0, 255, 0.33);
   position: absolute;
   transform-origin: bottom right;
-  box-shadow: inset 0 0 64px 8px rgba(255,0,0,0.8);
+  box-shadow: inset 0 0 64px 8px rgba(255, 0, 255, 0.8);
   top: calc(50% - 100px);
   left: calc(50% - 100px);
   animation: spin-bottom 2s ease-in-out 0s infinite normal;
@@ -25,28 +25,26 @@ body {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: rgba(0, 255, 0, 0.3);
+  background-color: rgba(255, 255, 0, 0.33);
   position: absolute;
   transform-origin: bottom left;
-  box-shadow: inset 0 0 64px 8px rgba(0,255,0,0.8);
+  box-shadow: inset 0 0 64px 8px rgba(255, 255, 0, 0.8);
   top: calc(50% - 100px);
   left: calc(50% - 100px);
   animation: spin-bottom 2s ease-in-out 0s infinite normal;
-  background-blend-mode: exclusion;
 }
-
 
 .bottom {
   position: absolute;
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: rgba(0, 0, 255, 0.3);
+  background-color: rgba(0, 255, 255, 0.33);
   transform-origin: top;
   animation: spin-bottom 2s ease-in-out 0s infinite normal;
   top: calc(50% - 100px);
   left: calc(50% - 100px);
-  box-shadow: inset 0 0 64px 8px rgba(0,0,255,0.8);
+  box-shadow: inset 0 0 64px 8px rgba(0, 255, 255, 0.8);
   background-blend-mode: screen;
 }
 
@@ -59,9 +57,9 @@ body {
   margin: 0 auto;
 }
 
-
 @keyframes spin-bottom {
-  0%, 20% {
+  0%,
+  20% {
     transform: rotate(0deg);
   }
   100% {
